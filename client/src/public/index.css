@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Dancing+Script&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/*
+===========================================================================================================
+                                            Header Styling
+===========================================================================================================
+*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #dadada; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body{
+    margin: 0;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    z-index: 1;
+    display: flex;
+    background-color: aqua;
+    flex-flow: row nowrap;
+    border-bottom:2px solid white;
+    align-items: baseline;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 8.5vh;
+}
+.logo{
+    justify-content: flex-start;
+}
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.links-inner{
+    padding: 0px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.links-inner > a,
+.logo-inner > a  
+{
+    color:black;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+.links-inner > a:hover,
+.logo-inner > a:hover
+{
+  color: white;
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}  
+
+.logo-inner{
+    padding: 0px 10px;
+    font-family: 'Dancing Script', cursive
+}
+
+/*
+===========================================================================================================
+                                            Body Styling
+===========================================================================================================
+*/
+
+.background{
+        /* The image used */
+        background-image: url("./background1.jpg");
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+        
+}
+
+.text-box{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.border {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid;
+    border-image:linear-gradient(45deg,red,yellow,blue,lime) 10;
+    padding: 0px 10px 20px 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+.border > a {
+    background-color: transparent; /* Green */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.border > a:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+
+/*
+===========================================================================================================
+                                            Footer Styling
+===========================================================================================================
+*/
+
+.foot{
+    display: flex;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.466);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.foot > h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: honeydew;
+}
+
+/*
+===========================================================================================================
+                                            Generator Styling
+===========================================================================================================
+*/
+
+.g_background{
+    display: grid;
+    grid-template-rows: 7vh 84vh;
+    grid-template-columns: auto auto auto auto auto;
+    height: 91vh;
+    background-color: lightpink;
+    position: relative;
+    top: 9vh;
+    border: 0px solid ;
+    border-radius: 8px;
+}
+.instructions{
+    grid-column-start: 1;
+    grid-column-end: 6;    
+    display: flex;
+    border:3px solid black;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.instructions > h1{
+    font-family: 'Raleway', Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.instructions > a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-right: 10px;
+    color: black;
+    margin: 25px 15px;
+    background-color: lightskyblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form > input, button{
+    background-color: transparent;
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-right: 10px;
+    padding: 10px 15px;
+    transition: 0.4s;
+}
+
+form > input:hover,button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+.modal{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 20px;
+    z-index: 3;
+    width: 25%;
+    height: 30vh;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+.mask{
+    display: block;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+/*
+===========================================================================================================
+                                            MyPallete Styling
+===========================================================================================================
+*/
+
+.m_background{
+    position: relative;
+    top: 8.5vh;
+    height: 90vh;
+}
+.card-set{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 3fr 1fr;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.card:hover{
+    background-color: lightgray ;
+
+}
+.content{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+}
