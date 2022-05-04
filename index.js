@@ -8,12 +8,6 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 4000
 
-//Connecting to Database || Deprecated :(
-dbURI = 'mongodb+srv://ridhwan12:mernstack@cluster0.yvplj.mongodb.net/MS?retryWrites=true&w=majority'
-mongoose.connect(dbURI, ({useNewUrlParser: true, useUnifiedTopology: true}))
-    .then(() => console.log('Connected to database'))
-    .catch(err => console.log(err))
-
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)
 })
